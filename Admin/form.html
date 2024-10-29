@@ -8,13 +8,13 @@
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="C:\Users\Raka\Documents\GitHub\Tubes_Webpro-3\CSS\styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Lab Logo -->
-        <img src="C:\Users\Raka\Documents\GitHub\Tubes_Webpro-3\Assets\logo_heslab_v2.svg" alt="HES Lab Logo" class="ms-3">
+        <img src="../Assets/logo_heslab_v2.svg" alt="HES Lab Logo" class="ms-3">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html">HES Lab Admin Page</a>
         <!-- Sidebar Toggle-->
@@ -27,15 +27,15 @@
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Admin Menu</div>
                         <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><img src="C:\Users\Raka\Documents\GitHub\Tubes_Webpro-3\Assets\activities.svg"></div>
+                            <div class="sb-nav-link-icon"><img src="../Assets/members.svg"></div>
                             Members
                         </a>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><img src="assets/img/publications.svg"></div>
+                        <a class="nav-link" href="publications.html">
+                            <div class="sb-nav-link-icon"><img src="../Assets/publications.svg"></div>
                             Publications
                         </a>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><img src="assets/img/activities.svg"></i></div>
+                        <a class="nav-link" href="activities.html">
+                            <div class="sb-nav-link-icon"><img src="../Assets/activities.svg"></i></div>
                             Activities
                         </a>
                     </div>
@@ -51,58 +51,35 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr>
-                                    <td><label for="roomName" class="form-label">Nama dan Nomor Ruangan</label></td>
-                                    <td><input type="text" class="form-control" id="roomName" placeholder="Contoh: Coworking space (B02)"></td>
+                                    <td><label for="name" class="form-label">Full Name</label></td>
+                                    <td><input type="text" class="form-control" id="name"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="roomSize" class="form-label">Ukuran Ruangan</label></td>
-                                    <td><input type="text" class="form-control" id="roomSize" placeholder="Contoh: 5 x 5"></td>
+                                    <td><label for="idNumber" class="form-label">ID Number</label></td>
+                                    <td><input type="text" class="form-control" id="idNumber" placeholder="Input you NIM or NIP"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="minCapacity" class="form-label">Minimal Kapasitas</label></td>
-                                    <td><input type="number" class="form-control" id="minCapacity"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="maxCapacity" class="form-label">Maksimal Kapasitas</label></td>
-                                    <td><input type="number" class="form-control" id="maxCapacity"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="location" class="form-label">Lokasi</label></td>
+                                    <td><label for="position" class="form-label">Position</label></td>
                                     <td>
-                                        <select class="form-select" id="location">
-                                            <option selected>Pilih Lokasi Gedung</option>
-                                            <option value="1">Gedung A</option>
-                                            <option value="2">Gedung B</option>
-                                            <option value="3">Gedung C</option>
+                                        <select class="form-select" id="position">
+                                            <option selected>Choose Position</option>
+                                            <option value="1">Laboratory Head</option>
+                                            <option value="2">Division Head</option>
+                                            <option value="3">Division Member</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="price" class="form-label">Harga</label></td>
-                                    <td>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" id="price" placeholder="Rp Masukkan Harga Ruangan">
-                                        </div>
-                                    </td>
+                                    <td><label for="number" class="form-label">Major</label></td>
+                                    <td><input type="text" class="form-control" id="number"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="timeUnit" class="form-label">Satuan Waktu Penyewaan</label></td>
-                                    <td>
-                                        <select class="form-select" id="timeUnit">
-                                            <option selected>Pilih Satuan Waktu</option>
-                                            <option value="1">Per Jam</option>
-                                            <option value="2">Per Hari</option>
-                                            <option value="3">Per Minggu</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="facilities" class="form-label">Fasilitas Ruangan</label></td>
-                                    <td><textarea class="form-control" id="facilities" rows="3" placeholder="Masukkan Fasilitas ruangan"></textarea></td>
+                                    <td><label for="year" class="form-label">Year</label></td>
+                                    <td><input type="number" class="form-control" id="year"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end">
-                                        <button type="submit" class="btn btn-primary">Tambah Ruangan</button>
+                                        <button type="submit" class="btn btn-success">Add Data</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -121,9 +98,9 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="../JS/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-    <script src="js/datatables-simple-demo.js"></script>
+    <script src="../JS/datatables-simple-demo.js"></script>
 </body>
 </html>
