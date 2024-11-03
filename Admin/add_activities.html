@@ -51,35 +51,20 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr>
-                                    <td><label for="name" class="form-label">Full Name</label></td>
-                                    <td><input type="text" class="form-control" id="name"></td>
+                                    <td><label for="title" class="form-label">Title</label></td>
+                                    <td><input type="text" class="form-control" id="title" placeholder="Enter activity title"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="idNumber" class="form-label">ID Number</label></td>
-                                    <td><input type="text" class="form-control" id="idNumber" placeholder="Input you NIM or NIP"></td>
+                                    <td><label for="photo" class="form-label">Photo</label></td>
+                                    <td><input type="file" class="form-control" id="photo" accept="image/*"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="position" class="form-label">Position</label></td>
-                                    <td>
-                                        <select class="form-select" id="position">
-                                            <option selected>Choose Position</option>
-                                            <option value="1">Laboratory Head</option>
-                                            <option value="2">Division Head</option>
-                                            <option value="3">Division Member</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="number" class="form-label">Major</label></td>
-                                    <td><input type="text" class="form-control" id="number"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="year" class="form-label">Year</label></td>
-                                    <td><input type="number" class="form-control" id="year"></td>
+                                    <td><label for="description" class="form-label">Description</label></td>
+                                    <td><textarea class="form-control" id="description" rows="4" placeholder="Enter activity description"></textarea></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end">
-                                        <button type="submit" class="btn btn-success">Add Data</button>
+                                        <button type="submit" class="btn btn-success">Add Activity</button>
                                     </td>
                                 </tr>
                             </tbody>

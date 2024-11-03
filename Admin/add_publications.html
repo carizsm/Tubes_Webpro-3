@@ -51,35 +51,28 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr>
-                                    <td><label for="name" class="form-label">Full Name</label></td>
-                                    <td><input type="text" class="form-control" id="name"></td>
+                                    <td><label for="title" class="form-label">Title</label></td>
+                                    <td><input type="text" class="form-control" id="title" placeholder="Enter publication title"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="idNumber" class="form-label">ID Number</label></td>
-                                    <td><input type="text" class="form-control" id="idNumber" placeholder="Input you NIM or NIP"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="position" class="form-label">Position</label></td>
-                                    <td>
-                                        <select class="form-select" id="position">
-                                            <option selected>Choose Position</option>
-                                            <option value="1">Laboratory Head</option>
-                                            <option value="2">Division Head</option>
-                                            <option value="3">Division Member</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="number" class="form-label">Major</label></td>
-                                    <td><input type="text" class="form-control" id="number"></td>
+                                    <td><label for="author" class="form-label">Author</label></td>
+                                    <td><input type="text" class="form-control" id="author" placeholder="Enter author name(s)"></td>
                                 </tr>
                                 <tr>
                                     <td><label for="year" class="form-label">Year</label></td>
-                                    <td><input type="number" class="form-control" id="year"></td>
+                                    <td><input type="number" class="form-control" id="year" placeholder="Enter year of publication"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="publisher" class="form-label">Publisher</label></td>
+                                    <td><input type="text" class="form-control" id="publisher" placeholder="Enter publisher name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="source" class="form-label">Source</label></td>
+                                    <td><input type="url" class="form-control" id="source" placeholder="Enter publication source (URL)"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end">
-                                        <button type="submit" class="btn btn-success">Add Data</button>
+                                        <button type="submit" class="btn btn-success">Add Publication</button>
                                     </td>
                                 </tr>
                             </tbody>
