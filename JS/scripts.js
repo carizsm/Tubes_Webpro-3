@@ -26,27 +26,40 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 function success(page) {
-    const fullName = document.getElementById("name").value;
-    const idNumber = document.getElementById("idNumber").value;
-    const position = document.getElementById("position").value;
-    const major = document.getElementById("number").value;
-    const year = document.getElementById("year").value;
-    const photo = document.getElementById("photo").value;
-
+    
     var part = "";
     if (page=="member") {
         part = "member";
+        const fullName = document.getElementById("name").value;
+        const idNumber = document.getElementById("idNumber").value;
+        const position = document.getElementById("position").value;
+        const major = document.getElementById("number").value;
+        const year = document.getElementById("year").value;
+        const photo = document.getElementById("photo").value;
+        if (!fullName || !idNumber || position === "Choose Position" || !major || !year || !photo) {
+            alert("Data " + part + " masih belum lengkap!");
+            return;
+        }
     } else if (page=="act") {
         part = "activities";
+        const title = document.getElementById("title").value;
+        const photo = document.getElementById("photo").value;
+        const Desc = document.getElementById("description").value;
+        if(!title || !photo || !Desc){
+            alert("Data " + part + " masih belum lengkap!");
+            return;
+        }
     } else {
         part = "publications"
+        const title = document.getElementById("title").value;
+        const author = document.getElementById("author").value;
+        const year = document.getElementById("year").value;
+        const publisher = document.getElementById("publisher").value;
+        const source = document.getElementById("source").value;
+        if(!title || !author || !year || !publisher || !source){
+            alert("Data " + part + " masih belum lengkap!");
+            return;
+        }
     }
-    
-    if (!fullName || !idNumber || position === "Choose Position" || !major || !year || !photo) {
-        alert("Data " + part + " masih belum lengkap!");
-        return;
-    }
-
-    
     alert('Data ' + part + ' berhasil ditambahkan!')
 }
