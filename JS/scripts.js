@@ -24,3 +24,15 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+function success(page) {
+    var part = "";
+    if (page=="member") {
+        part = "member";
+    } else if (page=="act") {
+        part = "activities";
+    } else {
+        part = "publications"
+    }
+    alert('Data ' + part + ' berhasil ditambahkan!')
+}

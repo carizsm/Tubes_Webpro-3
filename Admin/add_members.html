@@ -47,19 +47,19 @@
                 <div class="container-fluid px-4">
                     <h1 class="my-4">Add Member</h1>
                     <!-- TAMBAHIN DI BAWAH SINI -->
-                    <form>
+                    <form action="members.html">
                         <table class="table table-borderless">
                             <tbody>
                                 <tr>
                                     <td><label for="name" class="form-label">Full Name</label></td>
-                                    <td><input type="text" class="form-control" id="name" placeholder="Enter your full name"></td>
+                                    <td><input type="text" class="form-control" id="name" placeholder="Enter your full name" required></td>
                                 </tr>
                                 <tr>
                                     <td><label for="idNumber" class="form-label">ID Number</label></td>
-                                    <td><input type="text" class="form-control" id="idNumber" placeholder="Enter your NIM or NIP"></td>
+                                    <td><input type="text" class="form-control" id="idNumber" placeholder="Enter your NIM or NIP" required></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="position" class="form-label">Position</label></td>
+                                    <td><label for="position" class="form-label" required>Position</label></td>
                                     <td>
                                         <select class="form-select" id="position">
                                             <option selected>Choose Position</option>
@@ -71,20 +71,20 @@
                                 </tr>
                                 <tr>
                                     <td><label for="number" class="form-label">Major</label></td>
-                                    <td><input type="text" class="form-control" id="number" placeholder="Enter your major"></td>
+                                    <td><input type="text" class="form-control" id="number" placeholder="Enter your major" required></td>
                                 </tr>
                                 <tr>
                                     <td><label for="year" class="form-label">Year</label></td>
-                                    <td><input type="number" class="form-control" id="year" placeholder="Enter year of enrollment"></td>
+                                    <td><input type="number" class="form-control" id="year" placeholder="Enter year of enrollment" required></td>
                                 </tr>
                                 <!-- Field untuk Upload Foto -->
                                 <tr>
                                     <td><label for="photo" class="form-label">Upload Photo</label></td>
-                                    <td><input type="file" class="form-control" id="photo" accept="image/*" placeholder="Choose a photo"></td>
+                                    <td><input type="file" class="form-control" id="photo" accept="image/*" placeholder="Choose a photo" required></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end">
-                                        <button type="submit" class="btn btn-success">Add Data</button>
+                                        <button type="submit" class="btn btn-success" onclick="success('member')">Add Data</button>
                                     </td>
                                 </tr>
                             </tbody>
