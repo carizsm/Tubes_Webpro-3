@@ -26,6 +26,13 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 function success(page) {
+    const fullName = document.getElementById("name").value;
+    const idNumber = document.getElementById("idNumber").value;
+    const position = document.getElementById("position").value;
+    const major = document.getElementById("number").value;
+    const year = document.getElementById("year").value;
+    const photo = document.getElementById("photo").value;
+
     var part = "";
     if (page=="member") {
         part = "member";
@@ -34,5 +41,12 @@ function success(page) {
     } else {
         part = "publications"
     }
+    
+    if (!fullName || !idNumber || position === "Choose Position" || !major || !year || !photo) {
+        alert("Data " + part + " masih belum lengkap!");
+        return;
+    }
+
+    
     alert('Data ' + part + ' berhasil ditambahkan!')
 }
