@@ -34,9 +34,8 @@ function success(page) {
         const idNumber = document.getElementById("idNumber").value;
         const position = document.getElementById("position").value;
         const major = document.getElementById("number").value;
-        const year = document.getElementById("year").value;
         const photo = document.getElementById("photo").value;
-        if (!fullName || !idNumber || position === "Choose Position" || !major || !year || !photo) {
+        if (!fullName || !idNumber || position === "Choose Position" || !major || !photo) {
             alert("Data " + part + " masih belum lengkap!");
             return;
         }
